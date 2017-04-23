@@ -1,0 +1,70 @@
+请求信息：
+
+http://localhost:8080/app/a.html/login?username=123
+协议    服务器地址      资源地址    请求参数
+
+          POST    /app/a.html HTTP/1.1
+    请求行（请求方式   资源地址   协议脚本）：
+
+    请求头：
+
+    有名称：头值，多个头值用逗号隔开
+    Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+    Accept-Encoding:gzip, deflate, sdch
+    Accept-Language:zh-CN,zh;q=0.8,en;q=0.6
+    AlexaToolbar-ALX_NS_PH:AlexaToolbar/alx-4.0.1
+    Cache-Control:no-cache
+    Connection:keep-alive
+    Cookie:blogAppAd_blog7article=1; U_TRS1=0000003f.b8835da4.58bfecae.6af9e96a; U_TRS2=0000003f.b8945da4.58bfecae.36cabceb; UOR=www.google.com,blog.sina.com.cn,; SINAGLOBAL=45.76.153.63_1488972978.133557; vjuids=-51ea3e9cf.15aadb4c8a2.0.035393c999e9d; Apache=45.76.153.63_1488972992.676276; ULV=1489036605549:2:2:2:45.76.153.63_1488972992.676276:1488972979145; SessionID=8girtkio17aui70kb82u9gimk4; SGUID=1489708960438_72809682; SUB=_2A251z1eEDeRxGeNN6VIT9ibIyDqIHXVWvc5MrDV_PUNbm9BeLU_CkW9BZOfmbkuJ9gLA1fcnrZS8EWl8Xg..; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WWfQ4K6nnld0aMRXcwSVihU5JpX5KzhUgL.Fo-0eo5ESonXe0q2dJLoIEQLxKqL1-eL1hnLxK-L1h-L1h.LxK-L1h5LB.-LxK-L1-qL12-feKnRe0Bt; BLOG_TITLE=%E8%8B%8D%E8%9D%87%E4%B9%9F%E6%98%AF%E8%82%89%E5%91%80%E7%9A%84%E5%8D%9A%E5%AE%A2; dlg680=21; rotatecount=2; vjlast=1489708961.1490449430.11; afpCT=1
+    Host:blog.sina.com.cn
+    Pragma:no-cache
+    Referer:https://www.google.co.jp/
+    Upgrade-Insecure-Requests:1
+    User-Agent:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+
+    username=dali&password=123 请求正文：表单提交方式是POST （RequestBody）
+
+get：不能超过1K，post无限制
+
+响应信息：
+          HTTP/1.1  200   OK
+    响应行（响应协议  状态码  状态信息）
+
+    响应头：
+    Age:193371
+    Cache-Control:no-store
+    Cache-Control:no-cache
+    Connection:keep-alive
+    Content-Encoding:gzip
+    Content-Type:text/html
+    Date:Sat, 25 Mar 2017 15:28:47 GMT
+    DPOOL_HEADER:10.69.14.67
+    Expires:Sat, 25 Mar 2017 15:28:46 GMT
+    Last-Modified:Thu, 23 Mar 2017 17:45:56 GMT+8
+    P3P:CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+    Server:nginx/1.2.8
+    SINA-LB:aGwuMjIuc2c0LnhkLmxiLnNpbmFub2RlLmNvbQ==
+    SINA-TS:YjJlYzk2Y2UgMCAxIDEgMTMgMTEzCg==
+    Transfer-Encoding:chunked
+    Vary:Accept-Encoding
+    X-Cache:HIT from blog-front001.blog.tj.sinanode.com
+
+    login success! 响应正文：
+
+    Accept:浏览器可接受对MIME类型
+    Accept-Encoding:编码方式
+    Accept-Charset:支持哪种字符集
+    Accept-Language:浏览器希望的语言种类
+    Host:初始URL中的主机和端口
+    Referer:包含一个url，用户从该URL代表的页面出发访问当前请求的页面
+    Content-Type:内容类型
+
+
+java线程池
+线程池接口：ExecutorService
+Executors类提供四种线程池
+·newCachedThreadPool()      带缓存线程池
+·newFixedThreadPool()       固定数量线程池
+·newScheduledThreadPool()   定时线程池
+·newSingleThreadExecutor()  先来先服务原则，一次一个线程执行
+

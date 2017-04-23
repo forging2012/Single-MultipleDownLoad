@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">OkHttp</string>
+    <string name="title_activity_single_download">SingleDownloadActivity</string>
+</resources>

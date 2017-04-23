@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.dali.admin.okhttp.MainActivity">
+
+    <Button
+        android:onClick="onGet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GET"/>
+    <Button
+        android:onClick="onPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="POST"/>
+
+    <Button
+        android:onClick="onPostString"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="POST STRING"/>
+
+    <Button
+        android:onClick="onPostFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="POST FILE"/>
+
+    <Button
+        android:onClick="doUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UPLOAD FILE"/>
+
+    <Button
+        android:onClick="doDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DOWNLOAD FILE"/>
+
+    <Button
+        android:onClick="doDownloadImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DOWNLOAD IMAGE"/>
+
+    <Button
+        android:onClick="doCacheControl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CacheControl"/>
+
+    <Button
+        android:onClick="doPostForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="POST FORM"/>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
